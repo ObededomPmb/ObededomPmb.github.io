@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giving - Obededom Church</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Obededom</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center">Giving</h1>
+        <p class="text-center">Your contributions help us further our mission and serve our community.</p>
+
+        <h3>Why Tithes and Offerings Matter</h3>
+        <p>Tithes and offerings are a way for us to express our gratitude to God for His blessings. By giving, we support the work of the church and contribute to various ministries that impact lives both locally and globally.</p>
+
+        <h3>Where Your Money Goes</h3>
+        <ul>
+            <li>Support for church operations and maintenance</li>
+            <li>Community outreach programs</li>
+            <li>Mission trips and global outreach</li>
+            <li>Supporting local charities and families in need</li>
+        </ul>
+
+        <h3>Make Giving Simple</h3>
+        
+        <h4>Tithes</h4>
+        <p>Set aside 10% of your income to support the church. Your tithes are crucial for sustaining our ministry.</p>
+        <form action="https://yourpaymentgateway.com/tithes" method="POST">
+            <div class="form-group">
+                <label for="titheAmount">Tithe Amount:</label>
+                <input type="number" class="form-control" id="titheAmount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="titheName">Your Name:</label>
+                <input type="text" class="form-control" id="titheName" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="titheEmail">Your Email:</label>
+                <input type="email" class="form-control" id="titheEmail" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Give Tithes</button>
+        </form>
+
+        <h4 class="mt-5">Offerings</h4>
+        <p>Offerings are contributions above your tithe to support special projects and missions.</p>
+        <form action="https://yourpaymentgateway.com/offerings" method="POST">
+            <div class="form-group">
+                <label for="offeringAmount">Offering Amount:</label>
+                <input type="number" class="form-control" id="offeringAmount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="offeringName">Your Name:</label>
+                <input type="text" class="form-control" id="offeringName" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="offeringEmail">Your Email:</label>
+                <input type="email" class="form-control" id="offeringEmail" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Give Offerings</button>
+        </form>
+
+        <h3 class="mt-5">Thank You!</h3>
+        <p>Your generosity makes a difference. We appreciate your support and commitment to our mission.</p>
+    </div>
+
+    <footer class="text-center my-4">
+        <p>&copy; 2024 Obededom Church. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

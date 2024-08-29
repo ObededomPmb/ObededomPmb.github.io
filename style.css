@@ -1,0 +1,159 @@
+/* Global Styles */
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensures full height */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff; /* White background */
+}
+
+.navbar {
+    margin-bottom: 10px;
+    font-weight: 600; /* Bold for navbar */
+    color: #5B3A29; /* Dark brown for navbar text */
+}
+
+/* Sections */
+section {
+    background: white; /* White background for sections */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px; /* Consistent padding for sections */
+}
+
+h2, .about-section h2, .pastors-section h2 {
+    color: #5B3A29; /* Dark brown color for headings */
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #8B4513; /* Lighter brown for subheadings */
+    margin-bottom: 15px;
+    font-weight: 500; /* Medium weight for subheadings */
+}
+
+p {
+    color: #333; /* Darker text color for better readability */
+    font-weight: 300; /* Lighter weight for body text */
+}
+
+/* Images */
+img.img-fluid {
+    border-radius: 8px;
+}
+
+/* Buttons */
+.btn {
+    margin-top: 10px;
+    background-color: #8B4513; /* Button background */
+    color: white; /* Button text color */
+}
+
+.btn:hover {
+    background-color: #5B3A29; /* Darker brown on hover */
+}
+
+/* Footer Styles */
+footer {
+    background: #5B3A29; /* Darker brown */
+    color: white;
+    padding: 10px 0; /* Added padding for footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Header Styles */
+.video-header {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%; /* Ensure it covers the width */
+    min-height: 100%; /* Ensure it covers the height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Behind text */
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: cover; /* Cover the section */
+}
+
+/* Header Content */
+.header-content {
+    position: relative;
+    z-index: 2; /* Ensure text is above the video */
+    text-align: center;
+    color: white; /* Text color */
+    padding: 20px;
+}
+
+.header-content h1 {
+    font-size: 3rem; /* Adjust font size as needed */
+    margin-bottom: 10px;
+    font-weight: 700; /* Bold font weight for main header */
+}
+
+.header-content p {
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+/* Pastors Section */
+.pastors-section {
+    padding: 40px 0;
+}
+
+.pastors-section p {
+    margin-bottom: 30px;
+    font-size: 1rem; /* Smaller font size for paragraphs */
+}
+
+.pastors-section .row {
+    display: flex;
+    justify-content: center;
+}
+
+.pastors-section .col-md-3 {
+    margin: 20px;
+    text-align: center;
+}
+
+.pastors-section img {
+    width: 100%;
+    height: auto;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #8B4513; /* Brown color */
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 0; /* Add padding for top and bottom */
+}
+
+.about-section ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+}
+
+.about-section li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1rem; /* Consistent font size */
+    font-weight: 300; /* Lighter weight for list items */
+}

@@ -1,0 +1,82 @@
+/* Events Section */
+.events-section {
+    background-color: #f0f0f0;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .section-description {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .event-date {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+  }
+  
+  .event-date h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .event-date span {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .event-info {
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
+  .event-info h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .event-info p {
+    margin-bottom: 10px;
+    color: #777;
+    font-size: 1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .event-card {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .event-date {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  

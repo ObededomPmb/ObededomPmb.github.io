@@ -1,0 +1,57 @@
+/* Make the video cover the whole screen without scroll */
+.landing-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place video behind content */
+  }
+  
+  /* Center content in the middle of the screen */
+  .content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
+  /* Position the countdown closer to the bottom */
+  .countdown {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    z-index: 1;
+  }
+  
+  /* General page styling for smooth transitions */
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
